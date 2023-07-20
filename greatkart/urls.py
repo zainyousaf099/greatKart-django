@@ -21,7 +21,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/',include('admin_honeypot.urls',namespace='admin-honeypot')),
-    path("secureloginforzain/",  admin.site.urls),
+    path("zain/", admin.site.urls),
     path("",views.home, name="home"),
     path("store/", include('store.urls')),
     path('cart/',include('carts.urls')),
